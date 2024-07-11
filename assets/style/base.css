@@ -1,0 +1,123 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --border-color: #dbdbdb;
+  --background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6em;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.app {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+.grid__row-Nowrap {
+  display: flex;
+  flex-direction: row;
+}
+.grid__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.grid__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20x solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  transform: rotate(135deg);
+  right: 20px;
+  top: -6px;
+  z-index: -999;
+}
+
+.scrollable {
+  overflow-y: auto; /* Cho phép cuộn theo chiều dọc */
+  overflow-x: hidden; /* Ẩn cuộn ngang */
+  scrollbar-width: none;
+}
+.scrollable-div::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn dọc trên Chrome, Safari và Opera */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.item-content {
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.grow--animated {
+  animation: grow 0.25s ease-in-out forwards;
+  transform-origin: calc(100% - 25px) top;
+}
+.shrink--animated {
+  animation: shrink 0.15s ease-in-out forwards;
+  transform-origin: calc(100% - 25px) top;
+}
+.appear--animated {
+  animation: appear 0.25s ease-in-out forwards;
+}
+.disappear--animated {
+  animation: disappear 0.25s ease-in-out forwards;
+}
+.smaller--animated {
+  animation: smallerButton 0.25s ease-in-out forwards;
+}
+.bigger--animated {
+  animation: biggerButton 0.25s ease-in-out forwards;
+}
